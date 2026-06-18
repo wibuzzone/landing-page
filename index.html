@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wibuzone - Pengembangan Website Eksklusif</title>
+    <meta name="description" content="Wibuzone menyediakan layanan pembuatan satu halaman eksklusif, tampilan responsif, dan penyiapan SEO agar situsmu mudah ditemukan di pencarian.">
+    <meta name="keywords" content="Wibuzone, landing page, website responsif, jasa SEO, pengembangan web Indonesia">
+    <meta name="author" content="Wibuzone">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Wibuzone - Pengembangan Website Eksklusif">
+    <meta property="og:description" content="Solusi halaman satu tampilan berkelas, tampilan nyaman di semua perangkat, dan optimasi mesin pencari.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        dark: '#1D2129',
+                        light: '#F2F3F5'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+            .transition-custom { transition: all 0.3s ease; }
+            .scroll-smooth { scroll-behavior: smooth; }
+        }
+    </style>
+</head>
+<body class="font-sans scroll-smooth bg-gray-50 text-dark overflow-x-hidden">
+
+    <!-- Navigasi -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-[clamp(1.2rem,3vw,1.5rem)] font-bold text-primary">Wibuzone</a>
+            <div class="hidden md:flex gap-8">
+                <a href="#beranda" class="hover:text-primary transition-custom">Beranda</a>
+                <a href="#layanan" class="hover:text-primary transition-custom">Layanan</a>
+                <a href="#keunggulan" class="hover:text-primary transition-custom">Keunggulan</a>
+                <a href="#kontak" class="hover:text-primary transition-custom">Kontak</a>
+            </div>
+            <button class="md:hidden text-dark text-xl">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Bagian Utama -->
+    <section id="beranda" class="min-h-screen flex items-center bg-gradient-to-br from-blue-50 to-white pt-20">
+        <div class="container mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+            <div class="order-2 md:order-1">
+                <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-extrabold text-dark text-shadow leading-tight">
+                    Wibuzone<br>
+                    <span class="text-primary">Pengembangan Halaman Satu Tampilan Eksklusif</span>
+                </h1>
+                <p class="mt-6 text-gray-700 text-lg">
+                    Tampilan berkelas, nyaman dibuka di semua gawai, dan siap ditemukan oleh calon pengunjung lewat optimasi pencarian yang tepat.
+                </p>
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <a href="#kontak" class="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-custom">
+                        Mulai Proyek
+                    </a>
+                    <a href="#layanan" class="border-2 border-primary text-primary hover:bg-primary/5 px-8 py-3 rounded-lg font-medium transition-custom">
+                        Lihat Layanan
+                    </a>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 relative">
+                <div class="rounded-2xl shadow-2xl overflow-hidden border-8 border-white">
+                    <img src="https://picsum.photos/id/180/800/500" alt="Contoh tampilan halaman Wibuzone" class="w-full h-auto">
+                </div>
+                <div class="absolute -bottom-5 -left-5 bg-white p-4 rounded-lg shadow-lg hidden md:block">
+                    <p class="font-bold text-primary">100% Responsif</p>
+                    <p class="text-sm text-gray-600">Sesuai HP, Tablet & Komputer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan -->
+    <section id="layanan" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-dark">Layanan Utama Kami</h2>
+                <p class="mt-4 text-gray-600">Tiga poin utama yang menjadi dasar setiap hasil kerja Wibuzone</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Layanan 1 -->
+                <div class="p-8 rounded-xl bg-light hover:shadow-xl hover:-translate-y-2 transition-custom">
+                    <div class="w-16 h-16 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Halaman Satu Tampilan Eksklusif</h3>
+                    <p class="text-gray-700">Susunan rapi, alur baca nyaman, dan desain yang disesuaikan dengan identitas merek kamu agar terlihat istimewa.</p>
+                </div>
+                <!-- Layanan 2 -->
+                <div class="p-8 rounded-xl bg-light hover:shadow-xl hover:-translate-y-2 transition-custom">
+                    <div class="w-16 h-16 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa fa-mobile"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Susunan Penuh Responsif</h3>
+                    <p class="text-gray-700">Otomatis menyesuaikan ukuran layar, tampilan tetap indah dan mudah dioperasikan mulai dari ponsel hingga layar besar.</p>
+                </div>
+                <!-- Layanan 3 -->
+                <div class="p-8 rounded-xl bg-light hover:shadow-xl hover:-translate-y-2 transition-custom">
+                    <div class="w-16 h-16 bg-primary/10 text-primary rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Penyiapan Mesin Pencari</h3>
+                    <p class="text-gray-700">Struktur kode yang rapi, penandaan lengkap, dan kecepatan baik — dasar agar posisi di hasil pencarian semakin kuat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan SEO & Teknis -->
+    <section id="keunggulan" class="py-20 bg-gradient-to-b from-white to-blue-50">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-dark mb-6">Siap Ditemukan & Cepat Diakses</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa fa-check-circle text-primary text-xl mt-1"></i>
+                            <span>Struktur judul dan penjelasan yang sesuai standar pencarian</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa fa-check-circle text-primary text-xl mt-1"></i>
+                            <span>Berkas ringan dan muat cepat — nilai tambah bagi peringkat pencarian</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa fa-check-circle text-primary text-xl mt-1"></i>
+                            <span>Tautan bersih dan mudah dibaca pengunjung maupun mesin pencari</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa fa-check-circle text-primary text-xl mt-1"></i>
+                            <span>Siap dipasang di layanan hosting murah maupun layanan awan</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rounded-xl shadow-xl overflow-hidden">
+                    <img src="https://picsum.photos/id/248/800/500" alt="Kecepatan dan keteraturan struktur situs" class="w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold mb-6">Siap Membuat Halaman Utama yang Istimewa?</h2>
+            <p class="mb-8 text-lg text-white/90">Konsultasikan kebutuhanmu bersama tim Wibuzone — kami siapkan rancangan yang pas dengan anggaran dan tujuanmu.</p>
+            <a href="#" class="inline-block bg-white text-primary hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold shadow-lg transition-custom">
+                Hubungi Kami Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- Kaki Halaman -->
+    <footer class="bg-dark text-gray-300 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2026 Wibuzone — Pengembangan Halaman Satu Tampilan Eksklusif &amp; Siap Pencarian</p>
+        </div>
+    </footer>
+
+</body>
+</html>
